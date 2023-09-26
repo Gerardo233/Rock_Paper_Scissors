@@ -1,0 +1,142 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root {
+	--main-title: 'Rowdies', cursive;
+	--second-title: 'Lilita One', cursive;
+}
+
+.flex {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+/*Main container styles*/
+.container {
+	font-size: 16px;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 50px;
+	background-color: #191d88;
+	color: white;
+}
+
+/*Styles for the header*/
+.container > .header > h1 {
+	font-family: var(--second-title);
+	font-size: 3.5rem;
+	text-align: center;
+	letter-spacing: 2px;
+}
+
+/*Styles for the main sections*/
+.main-section {
+	width: 75%;
+	height: 600px;
+	/* border: 1px solid black; */
+	margin: 0 auto;
+}
+
+/*Styles for the main section in the user and computer blocks*/
+
+.main-section > div {
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.main-section > div:nth-child(odd) {
+	border: 4px solid #fff0f5;
+	width: 30%;
+	height: 600px;
+}
+
+.main-section > div:nth-child(2) {
+	/* border: 1px solid black; */
+	width: 20%;
+	height: 600px;
+}
+
+/*Styles for the main section in the user and computer blocks for their titles*/
+.main-section > div > .title {
+	width: 100%;
+}
+
+.main-section > .vs > .vs-word > h1 {
+	font-size: 4.5rem;
+}
+.main-section > .vs > .vs-word > h2{
+    text-align: center;
+    font-family: var(--main-title);
+    letter-spacing: 3px;
+    font-size: 2.5rem;
+}
+.main-section > .vs > .vs-word {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    flex-direction: column;
+}
+
+.main-section > div > .title > h2,
+.main-section > .vs > .vs-word > h1 {
+	font-family: var(--main-title);
+	text-align: center;
+}
+
+/*Styles for the main section in the user and computer blocks in the points section*/
+.main-section > div > .points {
+	border-radius: 50px;
+	width: 90%;
+	margin: 0 auto;
+
+	height: 400px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* background-color: #a6dbff; */
+}
+
+.main-section > div:nth-child(1) > .points {
+	height: 350px;
+}
+
+.main-section > div > .points > .point-number {
+	font-size: 20rem;
+	font-family: 'Indie Flower', cursive;
+	color: rgb(255, 255, 255);
+}
+
+.main-section > div > .weapons-container {
+	width: 100%;
+	/* border: 1px solid black; */
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 120px;
+}
+
+.main-section > div > .weapons-container > .weapon {
+	font-size: 5rem;
+	border-radius: 50px;
+	/* border: 1px solid black; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #eeededba;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.main-section > div > .weapons-container > .weapon:hover{
+    opacity: 1;
+    cursor: pointer;
+    transform: translateY(5px);
+}
+
